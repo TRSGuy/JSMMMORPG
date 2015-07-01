@@ -17,6 +17,6 @@ var keysDown = {};
 	
 		update: function() {
 	if (38 || 87 in keysDown) { // Player holding up
-		player.y -= player.speed;
+		console.log"Herp!";
 	}
 };
