@@ -19,13 +19,4 @@ var keysDown = {};
 	if (38 || 87 in keysDown) { // Player holding up
 		player.y -= player.speed;
 	}
-	if (40 || 83 in keysDown) { // Player holding down
-		hero.y += player.speed;
-	}
-	if (37 || 65 in keysDown) { // Player holding left
-		player.x -= player.speed;
-	}
-	if (39 || 68 in keysDown) { // Player holding right
-		player.x += player.speed;
-	}
 };
