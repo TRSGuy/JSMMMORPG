@@ -16,16 +16,16 @@ var keysDown = {};
 	}, false);
 	
 		update: function() {
-	if (38 in keysDown) { // Player holding up
+	if (38 || 87 in keysDown) { // Player holding up
 		player.y -= player.speed;
 	}
-	if (40 in keysDown) { // Player holding down
+	if (40 || 83 in keysDown) { // Player holding down
 		hero.y += player.speed;
 	}
-	if (37 in keysDown) { // Player holding left
+	if (37 || 65 in keysDown) { // Player holding left
 		player.x -= player.speed;
 	}
-	if (39 in keysDown) { // Player holding right
+	if (39 || 68 in keysDown) { // Player holding right
 		player.x += player.speed;
 	}
 };
