@@ -15,7 +15,7 @@ var keysDown = {};
 		delete keysDown[e.keyCode];
 	}, false);
 	
-		update: function() {
+		update: function(modifier) {
 	if (38 || 87 in keysDown) { // Player holding up
 		console.log"Herp!";
 	}
